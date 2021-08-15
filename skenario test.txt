@@ -1,0 +1,121 @@
+Skenario instrumentation test
+
+1. Menampilkan data movies
+    - Klik TabLayout dengan teks Movie.
+    - Memastikan rv_movies dalam keadaan tampil.
+    - Gulir rv_movies ke posisi data terakhir.
+
+2. Menampilkan data detail movie
+    - Klik TabLayout dengan teks Movie.
+    - Memastikan rv_movies dalam keadaan tampil.
+    - Gulir rv_movies ke posisi yang dikehendaki.
+    - Memberi tindakan klik pada data pertama di rv_movies.
+    - Gulir content pada detail movie
+    - Memastikan TextView untuk title tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk date tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk overview tampil sesuai dengan yang diharapkan.
+    - Memastikan ImageView untuk poster tampil sesuai dengan yang diharapkan.
+    - Menekan tombol kembali
+
+3. Melihat, Menambah dan Menghapus data Favorite Movie
+    //Proses Insert Data
+    - Klik TabLayout dengan teks Movie
+    - Memastikan rv_movies dalam keadaan tampil.
+    - Gulir rv_movies ke posisi yang dikehendaki.
+    - Memberi tindakan klik pada data pertama di rv_movies.
+    - Gulir content pada detail movie
+    - Memastikan TextView untuk title tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk date tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk overview tampil sesuai dengan yang diharapkan.
+    - Memastikan ImageView untuk poster tampil sesuai dengan yang diharapkan.
+    - Menekan tombol FloatingActionButton untuk menambahkan data movie pada database.
+    - Menekan tombol kembali ke Home Catalog Movie
+
+    //Proses Hapus Data
+    - Klik icon favorite toolbar dengan id action_favorite
+    - Klik TabLayout dengan teks Movie
+    - Memastikan rv_movies dalam keadaan tampil.
+    - Gulir rv_movies ke posisi yang dikehendaki.
+    - Memberi tindakan klik pada data pertama di rv_movies.
+    - Gulir content pada detail movie
+    - Memastikan TextView untuk title tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk date tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk overview tampil sesuai dengan yang diharapkan.
+    - Memastikan ImageView untuk poster tampil sesuai dengan yang diharapkan.
+    - Menekan tombol FloatingActionButton untuk menghapus data movie pada database.
+    - Menekan tombol kembali ke Home Catalog Movie
+
+4. Menampilkan data tv shows
+    - Klik TabLayout dengan teks Tv Show.
+    - Memastikan rv_tv_shows dalam keadaan tampil.
+    - Gulir rv_tv_shows ke posisi data terakhir.
+
+5. Menampilkan data detail tv shows
+    - Klik TabLayout dengan teks Tv Shows.
+    - Memastikan rv_tv_shows dalam keadaan tampil.
+    - Gulir rv_tv_shows ke posisi yang dikehendaki.
+    - Memberi tindakan klik pada data pertama di rv_tv_shows.
+    - Gulir content pada detail tv show
+    - Memastikan TextView untuk title tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk date tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk overview tampil sesuai dengan yang diharapkan.
+    - Memastikan ImageView untuk poster tampil sesuai dengan yang diharapkan.
+    - Menekan tombol kembali
+
+6. Melihat, Menambah dan Menghapus data Favorite Tv Show
+    //Proses Insert Data
+    - Klik TabLayout dengan teks Tv Show
+    - Memastikan rv_tv_shows.dalam keadaan tampil.
+    - Gulir rv_tv_shows.ke posisi yang dikehendaki.
+    - Memberi tindakan klik pada data pertama di rv_tv_shows.
+    - Gulir content pada detail tv show
+    - Memastikan TextView untuk title tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk date tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk overview tampil sesuai dengan yang diharapkan.
+    - Memastikan ImageView untuk poster tampil sesuai dengan yang diharapkan.
+    - Menekan tombol FloatingActionButton untuk menambahkan data tv show pada database.
+    - Menekan tombol kembali ke Home Catalog Movie
+
+    //Proses Hapus Data
+    - Klik icon favorite toolbar dengan id action_favorite
+    - Klik TabLayout dengan teks Tv Show
+    - Memastikan rv_tv_shows dalam keadaan tampil.
+    - Gulir rv_tv_shows ke posisi yang dikehendaki.
+    - Memberi tindakan klik pada data pertama di rv_tv_shows.
+    - Gulir content pada detail movie
+    - Memastikan TextView untuk title tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk date tampil sesuai dengan yang diharapkan.
+    - Memastikan TextView untuk overview tampil sesuai dengan yang diharapkan.
+    - Memastikan ImageView untuk poster tampil sesuai dengan yang diharapkan.
+    - Menekan tombol FloatingActionButton untuk menghapus data tv show pada database.
+    - Menekan tombol kembali ke Home Catalog Movie
+
+Skenario Unit Testing Repository
+
+1. MovieViewModelTest:
+    Memuat Movies:
+    - Memanipulasi data ketika pemanggilan data movie di kelas repository.
+    - Memastikan metode di kelas repository terpanggil.
+    - Melakukan pengecekan data movie apakah null atau tidak.
+    - Melakukan pengecekan jumlah data movie apakah sudah sesuai atau belum.
+
+2. TvShowViewModelTest:
+    Memuat TvShows:
+    - Memanipulasi data ketika pemanggilan data tv show di kelas repository.
+    - Memastikan metode di kelas repository terpanggil.
+    - Melakukan pengecekan data tv show apakah null atau tidak.
+    - Melakukan pengecekan jumlah data tv show apakah sudah sesuai atau belum.
+
+3. DetailMovieViewModelTest:
+    Memuat Detail Movie:
+    - Memanipulasi data ketika pemanggilan data movie di kelas repository.
+    - Memastikan metode di kelas repository terpanggil.
+    - Melakukan pengecekan data movie apakah null atau tidak.
+    - Membandingkan data movie sudah sesuai dengan yang diharapkan atau tidak.
+
+4. DetailTvShowViewModelTest:
+    Memuat Detail TvShows:
+    - Memanipulasi data ketika pemanggilan data tv show di kelas repository.
+    - Memastikan metode di kelas repository terpanggil.
+    - Melakukan pengecekan data tv show apakah null atau tidak.
+    - Membandingkan data tv show sudah sesuai dengan yang diharapkan atau tidak.

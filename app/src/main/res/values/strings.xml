@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Catalog Movie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie">Movie</string>
+    <string name="tv_show">Tv Show</string>
+    <string name="api_key">1cd6a8fe7a5050073c315c4f98ab645a</string>
+</resources>
